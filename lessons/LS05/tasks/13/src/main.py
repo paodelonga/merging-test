@@ -77,7 +77,7 @@ if per_deseja_pedido == "sim" :
 
   # Processamento dos dados
   ### Primeiro prato
-  if len(pedido_principal) > 0:
+  if pedido_principal.isnumeric():
     if pedido_principal == "1":
       valor_pedido = float(qtd_principal * 4.0)
     elif pedido_principal == "2":
@@ -86,7 +86,7 @@ if per_deseja_pedido == "sim" :
       print(f"O prato de Nº{pedido_principal} não existe."  )
 
     ### Segundo prato
-    if len(outro_principal) > 0:
+    if outro_principal.isnumeric():
       if outro_principal == "1":
         valor_pedido = float(valor_pedido + (qtd_outro_principal * 4.0))
       elif outro_principal == "2":
@@ -95,7 +95,7 @@ if per_deseja_pedido == "sim" :
         print(f"O prato de Nº{pedido_principal} não existe."  )
 
     ### Primeiro acompanhamento
-    if len(acomp_principal) > 0:
+    if acomp_principal.isnumeric():
       if acomp_principal == "3":
         valor_pedido = float(valor_pedido + (qtd_acomp_principal * 5.00))
       elif acomp_principal == "4":
@@ -104,7 +104,7 @@ if per_deseja_pedido == "sim" :
         print(f"O acompanhamento de Nº{acomp_principal} não existe."  )
 
       ### Segundo prato
-      if len(outro_acomp) > 0:
+      if outro_acomp.isnumeric():
         if outro_acomp == "3":
           valor_pedido = float(valor_pedido + (qtd_outro_acomp * 5.00))
         elif outro_acomp == "4":
