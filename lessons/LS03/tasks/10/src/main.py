@@ -4,6 +4,19 @@
 Faça um Programa que leia três
 números diferentes e mostre-os
 em ordem decrescente.
+
+### Entrada
+
+Z
+Z
+Z
+
+### Saida
+
+Z Z Z
+Z,Z,Z
+Z, Z, Z
+Z > Z > Z
 """
 
 n1 = int(input("Digite o 1° número : "))
