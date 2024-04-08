@@ -11,7 +11,8 @@ print("""
 """)
 
 
-# Inicializando as variaveis
+# Atribuindo variaveis a objetos vazios para
+# execcoes causadas por names nao definidos
 valor_pedido = float()
 per_deseja_pedido = str()
 
@@ -36,10 +37,8 @@ outro_acomp = str()
 qtd_outro_acomp = int()
 acomp_completo = str()
 
-
 # Entrada/pergunta primaria
 per_deseja_pedido = input("Gostaria de fazer um pedido? ")
-
 
 # Inicia o processo de pedido
 if per_deseja_pedido == "sim" :
@@ -54,9 +53,6 @@ if per_deseja_pedido == "sim" :
     qtd_outro_principal = int(input(f"Qual a quantidade de pratos Nº{outro_principal}? "))
 
     principal_completo = pedido_principal + outro_principal
-    # print(f"{outro_principal} {qtd_outro_principal}")
-
-  # print(f"{pedido_principal} {qtd_principal}")
 
   # Bloco de acompanhamentos/outros
   per_pedido_acomp = input("Deseja acompanhamento? ")
@@ -71,9 +67,6 @@ if per_deseja_pedido == "sim" :
       qtd_outro_acomp = int(input(f"Qual a quantidade do acompanhamento Nº{outro_acomp}? "))
 
       acomp_completo = acomp_principal + outro_acomp
-      # print(f"{outro_acomp} {qtd_outro_acomp}")
-
-    # print(f"{acomp_principal} {qtd_acomp_principal}")
 
   # Processamento dos dados
   ### Primeiro prato
